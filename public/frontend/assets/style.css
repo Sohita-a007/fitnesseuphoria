@@ -1,0 +1,877 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Resetting CSS Styles */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* setting Variables */
+
+:root {
+    --primary-color-1: #f77737;
+    --primary-color-2: #0c0a0afc;
+    --primary-color-3: #dededefc;
+    --border-color: #BECCD6;
+    --primary-text-color: #656565;
+}
+
+/* general css */
+
+body {
+    font-family: 'jost', sans-serif;
+    font-size: 15px;
+    color: #656565;
+    line-height: 1.7;
+}
+
+section {
+    padding: 40px 0px;
+}
+
+a {
+    text-decoration: none;
+    color: #656565;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* Container */
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+/* Animatio n */
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+/* Home Page CSS*/
+
+/* header CSS */
+
+/* navbar section css*/
+
+
+.navbar {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+    background: #0c0a0afc;
+    padding: 8px 16px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar .container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.navbar-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header.fixed {
+    transition: all 0.5s ease-in-out;
+}
+
+.header.fixed .nav-main-logo img {
+    width: 150px;
+    transition: all 0.5s ease-in-out;
+}
+
+.header.fixed .nav-content li a {
+    font-size: 14px;
+    transition: all 0.5s ease-in-out;
+}
+
+.nav-logo {
+    padding: 10px 5px 0px 5px;
+    margin-right: 16px;
+}
+
+.nav-main-logo img {
+    width: 180px;
+    transition: all 0.5s ease-in-out;
+}
+
+.nav-content {
+    display: flex;
+    align-items: center;
+}
+
+.nav-content .nav-ul {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+
+}
+
+.nav-ul li {
+    margin: 0px 10px;
+}
+
+.nav-ul .nav-text {
+    color: #ffffff;
+    padding: 0px 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.nav-text:hover {
+    color: #f77737;
+}
+
+.signin-btn {
+    background: var(--primary-color-2);
+    border-radius: 6px;
+    padding: 9px 20px;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.signin-btn:hover {
+    color: #fff;
+    background: #f77737;
+    transition: all 0.5s ease-in-out;
+}
+
+/* End of navigation section */
+
+/* banner CSS */
+.banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgb(0 0 0 / 60%)), url(../img/banner.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    width: 100%;
+    min-height: 675px;
+}
+
+.banner-text {
+    color: #fff;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding-top: 250px;
+    animation: 3s ease-out 0s slideInFromLeft;
+}
+
+.banner-text h1 {
+    line-height: 2;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.banner-text p {
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.banner-btn {
+    background: var(--primary-color-3);
+    border-radius: 8px;
+    padding: 8px 10px;
+    color: #fff;
+    display: inline-block;
+    width: 10%;
+}
+
+.banner-btn:hover {
+    background: var(--primary-color-4);
+}
+
+/* End of banner CSS*/
+
+/* Search CSS */
+
+
+.search-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px -15px;
+    padding-left: 100px;
+}
+
+.form-wrapper {
+    width: 100%;
+    padding: 0px 15px;
+}
+
+.form select {
+    border: 1px solid #BECCD6;
+    outline: none;
+    padding: 12px 15px;
+    width: 100%;
+    color: var(--primary-color-1);
+    border-radius: 0px;
+}
+
+.select-btn {
+    background: var(--primary-color-1);
+    border-radius: 6px;
+    padding: 8px 20px;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+}
+
+.select-btn:hover {
+    background: #f77737b0;
+}
+
+.form select option {
+    padding: 0px 20px;
+
+}
+
+/* End of Search CSS */
+
+/* Top Picks */
+
+.top-pick-header h3 {
+    text-align: center;
+    font-size: 25px;
+    color: #0c0a0afc;
+}
+
+.home-button {
+    display: flex;
+    justify-content: center;
+}
+
+.home-button a {
+    border-radius: 0px;
+    padding: 10px 15px;
+    color: var(--primary-color-2);
+    background: var(--primary-color-1);
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+
+.home-button a:hover {
+    color: var(--primary-color-1);
+    background: var(--primary-color-2);
+    transition: all 0.5s ease-in-out;
+}
+
+/* End of top picks */
+
+/* slider */
+#slider .item img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.pick-img {
+    display: flex;
+    justify-content: center;
+}
+
+#owl-demo .item img {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: auto;
+    margin-top: 50px;
+}
+
+/* end of slider */
+
+
+
+
+/* Subscription CSS */
+
+.subscribe {
+    padding: 0px 0px;
+    background: var(--primary-color-1);
+}
+
+.sub-body {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+}
+
+.sub-content {
+    padding: 60px 200px 0px 75px;
+}
+
+.sub-text {
+    padding-bottom: 15px;
+}
+
+.sub-text p {
+    color: #fff;
+}
+
+.sub-header strong {
+    color: #fff;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.sub-image img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.sub-form input {
+    width: 80%;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+.sub-form ::placeholder {
+    color: #fff;
+}
+
+/* End of Subscription CSS */
+
+/* Customer CSS */
+
+.customer {
+    padding: 40px 0px 100px 0px;
+    background-color: var(--primary-color-3);
+}
+
+.customer-header {
+    text-align: center;
+    padding: 0px 150px;
+}
+
+.customer-header h3 {
+    padding: 15px 0px;
+    font-size: 30px;
+    color: var(--primary-color-2);
+}
+
+.customer-logo {
+    padding-top: 50px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.owl-carousel .owl-item img {
+    width: 65%;
+}
+
+/* End of Customer CSS */
+
+/* Footer section */
+
+.footer {
+    background: var(--primary-color-2);
+    border-bottom: 1px solid #ffa90033;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.haven-logo {
+    width: 75%;
+}
+
+.haven-logo img {
+    width: 100%;
+}
+
+.connect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.connect p {
+    padding-bottom: 10px;
+}
+
+.know-list {
+    color: #fff;
+}
+
+.know-list li {
+    padding-bottom: 1px;
+}
+
+.know-list a {
+    color: #fff;
+    position: relative;
+}
+
+
+.know-list a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: var(--primary-color-1);
+    transition: all 0.5s ease-in-out;
+}
+
+.know-list a:hover::after {
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+.contact-list {
+    color: #fff;
+}
+
+.contact-list span {
+    position: relative;
+}
+
+.contact-list span::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background: var(--primary-color-1);
+    transition: all 0.5s ease-in-out;
+}
+
+.contact-list span:hover::after {
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+.contact-list a {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-bottom: 10px;
+}
+
+.contact-list a img {
+    width: 16px;
+    height: 16px;
+}
+
+.icon-footer {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.social-icon .icon-hover {
+    height: 50px;
+    align-items: center;
+    width: 50px;
+    background: #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.social-icon .icon-hover img {
+    height: 18px;
+    transition: all 0.5s ease-in-out;
+}
+
+.social-icon .icon-hover:hover img {
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+
+}
+
+.social-icon .icon-hover:hover {
+    background: var(--primary-color-1);
+    transition: all 0.5s ease-in-out;
+
+
+}
+
+.card-logo {
+    display: flex;
+    column-gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-logo .khalti img {
+    width: 75px;
+}
+
+.card-logo .fonepay img {
+    width: 80px;
+}
+
+.card-logo .esewa img {
+    width: 90px;
+}
+
+.fa-brands,
+.fab {
+    font-weight: 300;
+    color: #000;
+}
+
+.end-footer {
+    background: var(--primary-color-2);
+    padding: 20px 0px;
+}
+
+.end-footer-text {
+    color: #fff;
+    text-align: center;
+}
+
+.end-footer-text a {
+    color: var(--primary-color-1);
+}
+
+/* Endof Footer CSS */
+
+/* Sign-in page CSS */
+
+.log-in {
+    background: linear-gradient(rgb(0 0 0 / 43%), rgb(0 0 0 / 58%)), url(../img/hero/hero-1.jpg) center center no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 750px;
+}
+
+.log-content {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    background: #fff;
+    border-radius: 6px;
+    min-width: 500px;
+}
+
+.login {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.login strong {
+    color: var(--primary-color-1);
+    font-size: 22px;
+}
+
+.username {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--primary-color-1);
+}
+
+.user-form {
+    border: 1px solid #BECCD6;
+    padding: 12px 15px;
+    color: var(--primary-color-6);
+    width: 100%;
+    border-radius: 6px;
+    outline: none
+}
+
+.user-form::placeholder {
+    color: var(--primary-color-1);
+}
+
+.password {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+
+.pw-form {
+    border: 1px solid #BECCD6;
+    padding: 12px 15px;
+    color: var(--primary-color-6);
+    width: 100%;
+    border-radius: 6px;
+    outline: none;
+}
+
+.pw-form::placeholder {
+    color: var(--primary-color-1);
+}
+
+.forgot {
+    display: flex;
+    justify-content: end;
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+.forgot a {
+    color: var(--primary-color-2);
+    transition: all 0.5s ease-in-out;
+}
+
+.forgot a:hover {
+    color: var(--primary-color-1);
+    transition: all 0.5s ease-in-out;
+}
+
+.sign-up {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sign-here {
+    color: var(--primary-color-1);
+}
+
+.sign-here:hover {
+    color: var(--primary-color-2);
+    transition: all 0.5s ease-in-out;
+}
+
+.submit {
+    background: var(--primary-color-2);
+    border-radius: 6px;
+    padding: 9px 20px;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+
+    outline: none;
+}
+
+.submit:hover {
+    background: var(--primary-color-1);
+    transition: all 0.5s ease-in-out;
+}
+
+/* END OF SIGN SECTION*/
+
+/* Contact CSS */
+
+.contact {
+    padding: 40px 0px 50px 0px;
+}
+
+.contact-header {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-bottom: 50px;
+}
+
+.contact-header span a {
+    color: var(--primary-color-2);
+}
+
+.contact-header span a:hover {
+    color: var(--primary-color-3);
+
+}
+
+.contact-header strong {
+    color: var(--primary-color-1);
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.cont-content {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 30px;
+}
+
+.cont-heading {
+    position: relative;
+    color: var(--primary-color-1);
+    font-size: 22px;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+}
+
+.cont-heading strong {
+    font-weight: 500;
+
+}
+
+.cont-heading::before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    background: var(--primary-color-2);
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+
+.cont-name {
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 14px 15px;
+    line-height: 1.5;
+    background-color: #efefef;
+}
+
+.cont-name::placeholder {
+    font-size: 16px;
+    font-family: 'Jost', sans-serif;
+}
+
+.contact-details label {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--primary-text-color);
+}
+
+.contact-address {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.contact-submit {
+    display: flex;
+}
+
+.contact-submit a {
+    background: var(--primary-color-3);
+    border-radius: 8px;
+    padding: 8px 16px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.contact-submit a:hover {
+    background: var(--primary-color-4);
+    transition: all 0.5s ease-in-out;
+}
+
+.cont-txt {
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+.cont-text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-bottom: 10px;
+    line-height: 1.5;
+}
+
+.cont-text strong {
+    color: var(--primary-color-1);
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.cont-email a {
+    color: var(--primary-color-2);
+    transition: all 0.3s ease-in-out;
+}
+
+.cont-email a:hover {
+    color: var(--primary-color-3);
+    transition: all 0.3s ease-in-out;
+}
+
+/* End of contact CSS */
+
+/* Map CSS */
+.map {
+    overflow: hidden;
+    padding-bottom: 25.25%;
+    position: relative;
+    height: 0;
+}
+
+.map iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+/* end of Map CSS */
+
+/* product CSS Section*/
+/* search section */
+.search-product {
+    margin-top: 75px;
+}
+
+/* end of search section */
+
+/* products CSS */
+/* end of products CSS */
+
+/* End of product CSS Section*/
